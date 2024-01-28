@@ -36,7 +36,7 @@ class Formatter():
 
     def history(self, dialogue: list):
         temp = ""
-        for idx in range(0, len(dialogue), 2):
+        for idx in range(0, len(dialogue)-1, 2):
             user = dialogue[idx]
             bot = dialogue[idx + 1]
             temp += self.templates["history"].format(question=(user["content"] or "."), answer=bot["content"])
