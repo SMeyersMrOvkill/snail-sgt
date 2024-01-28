@@ -2,11 +2,9 @@ from setuptools import setup
 
 setup(
     name="snail-sgt",
-    version="1.0",
-    description="A package for communicating with Microsoft Phi 2 over the Together Computer Serverless Inferene API.",
+    version="0.0.2",
+    description="Performs inference and other generative techniques with API's or direct inference toolkits to produce outputs such as dialogues, images, and 3d models for users. All with minimal investment of time and input-to-output ratio.",
     author="Samuel L Meyers",
     author_email="sam@samuellmeyers.com",
-    url="https://github.com/SMeyersMrOvkill/snail-sgt",
-    packages=["snail_sgt"],
-    install_requires=["requests"],
+    url="https://github.com/SMeyersMrOvkill/snail-sgt"
 )

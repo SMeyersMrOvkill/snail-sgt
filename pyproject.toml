@@ -6,4 +6,9 @@ authors = [
 ]
 description = "Simple Generation Toolkit - A set of scripts and basic libraries in Python to easily access complex features of LLM's like RAG, LLM-guided Image Generation, and 3d models."
 readme = "README.md"
+<<<<<<< HEAD
 requires-python = ">=3.8"
+=======
+requires-python = ">=3.8"
+dependencies = ["requests"]
+>>>>>>> _mrg1
