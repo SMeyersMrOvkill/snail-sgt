@@ -37,8 +37,8 @@ class Formatter():
     def history(self, dialogue: list):
         temp = ""
         for idx in range(0, len(dialogue), 2):
-            user = self.history[idx]
-            bot = self.history[idx + 1]
+            user = dialogue[idx]
+            bot = dialogue[idx + 1]
             temp += self.templates["history"].format(question=(user["content"] or "."), answer=bot["content"])
         if ((len(self.history) % 2) == 1) and bot:
             temp += "User: .\nBot:"
@@ -101,7 +101,7 @@ class Dialogue():
         self.message(message)
         prompt = self.fmt.prompt(
             self.messages,
-            stop_token=stop[0] or "",
+            stop_token=(stop and stop[0]) or ""
         )
         try:
             return self.generate(prompt,
