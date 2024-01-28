@@ -1,0 +1,9 @@
+[project]
+name = "snail_sgt_MrOvkill"
+version = "0.0.1"
+authors = [
+  { name="Samuel L Meyers", email="sam@samuellmeyers.com" },
+]
+description = "Simple Generation Toolkit - A set of scripts and basic libraries in Python to easily access complex features of LLM's like RAG, LLM-guided Image Generation, and 3d models."
+readme = "README.md"
+requires-python = ">=3.8"
