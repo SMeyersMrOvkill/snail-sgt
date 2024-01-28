@@ -1,0 +1,10 @@
+build
+dist
+*.egg-info
+*egg-info
+.dist-info
+.dist
+*.pyc
+*_pycache_*
+snail_sgt.egg-info
+src/snail_sgt_MrOvkill.egg-infos
